@@ -1,0 +1,128 @@
+*{  
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #1A8CFF;
+}
+
+/*nav*/
+nav{
+    width: 100%;
+    display: flex;
+    margin: 2% auto auto auto;
+}
+nav h1{
+    margin-left: 5%;
+    color: #25d78c;
+}
+
+ul{
+    /*margin-left: 30%;*/
+    margin: auto 5% auto 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding-inline-start: 0px;
+}
+ul li{
+    list-style: none;
+    margin-right: 5%;
+    color: rgb(255, 255, 255);
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+li span{
+    color: #00BFA6;
+}
+
+/* main */
+main{
+    width: 100%;
+    margin-top: 5em;
+}
+
+.texto1, .texto2{
+    width: 45%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.texto1, .eye{
+    float: left;
+    clear: left;
+    margin-left: 5%;
+    color: #ffffff;
+}
+.texto2{
+    float: right;
+    color: rgba(37, 215, 140, 1);
+}
+.texto2, article{
+    margin-right: 5%;
+}
+
+.artigo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.eye, article{
+    width: 40%;
+}
+.eye{
+    float: left;
+    clear: left;
+}
+article{
+    float: right;
+    clear: right;
+    text-align: justify;
+}
+
+#button{
+    margin: 02% ;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.dados_pessoais{
+    margin: 05%;
+}
+.dados_pessoais div{
+    width: 45%;
+    background-color: #ffffff;
+    padding: 1%;
+    border-radius: 3px;
+}
+.dados p {
+    text-align: center;
+}
+.dados a {
+    margin-left: 5%;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #00BFA6;
+    padding: 1em ;
+    color: #ffffff;
+    clear: both; 
+}
+footer a {
+    color: #ffffff;
+}
+#button a {
+    background-color: #25d78c;
+    padding: 1%;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
