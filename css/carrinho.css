@@ -1,0 +1,103 @@
+*{  
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    margin: 02%;
+}
+
+h1{
+    text-align: center;
+    margin: 5% auto 1% auto;
+}
+.paragrafo1 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+form {  
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, select{
+    max-width: 50%;
+    margin-bottom: 1em;
+}
+select{
+    width: 8rem;
+    border-style: none;
+}
+input[type=text]{
+    width: 30%;
+}
+form button{
+    width: 10rem;
+    border-style: none;
+    background-color: #00BFA6;
+    padding: 0.5em;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.seus_produtos{
+    font-weight: bold;
+    text-align: center;
+    color: #00BFA6;
+}
+.carrinho_produto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid;
+    margin: 1rem auto 1rem 0;
+}
+
+#dados, .forma_entrega{
+    width: 40%;
+    margin: 5%;
+}
+#dados{
+    float: left;
+}
+.forma_entrega{
+    float: right;
+    text-align: justify;
+}
+ul li{
+    font-weight: 600;
+    margin: 1em auto 2rem auto;
+}
+
+.paragrafo2{
+    max-width: 70%;
+    font-size: 10pt;
+    margin-top: 2rem;
+    float: right;
+}
+
+.bola{
+    
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+.bola11{
+    background-color: rgba(26, 140, 255, 0.1);
+    width: 200px;
+    height: 200px;
+    top: 0;
+}
+.bola12{
+    background-color: rgba(0, 191, 166, 0.15);
+    width: 350px;
+    height: 350px;
+    bottom: 0;
+    right: 0;
+}
