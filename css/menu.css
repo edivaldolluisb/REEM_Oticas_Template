@@ -8,9 +8,10 @@
 }
 .fechar_menu_btn{
     display: none;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     margin: 1em;
+    top: 0;
     right: 0;
     z-index: 1;
 }

@@ -59,3 +59,43 @@ section{
     padding: 0.5em;
 }
 
+/*Responsividade*/
+
+@media screen and (max-width:581px) {
+    .produto {
+        width: 13rem;
+    }
+}
+@media screen and (max-width:510px) {
+    .produto {
+        width: 12rem;
+    }
+}
+@media screen and (max-width:485px) {
+    .produto {
+        width: 10rem;
+    }
+    #barra_pesquisa {
+        display: flex;
+        margin-left: 7%;
+    }
+    input[type=search]{
+        width: 25em;
+    }
+}
+@media screen and (max-width:400px) {
+    .produto {
+        width: 15rem;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    input[type=search]{
+        width: 20em;
+    }
+}
+
+@media screen and (max-width:375px) {
+    input[type=search]{
+        width: 15em;
+    }
+}
