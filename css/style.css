@@ -122,8 +122,40 @@ footer a {
 }
 #button a {
     background-color: #25d78c;
-    padding: 1%;
+    padding: 0.5em;
     border-radius: 3px;
     text-decoration: none;
     cursor: pointer;
+}
+
+/*Resposnsividade*/
+
+@media screen and (max-width:720px) {
+    .eye, article{
+        width: 90%;
+        margin: 1rem 5% 1rem 5%;
+    }
+    .eye{
+        float: left;
+        clear: left;
+    }
+    article{
+        float: right;
+        clear: right;
+        text-align: justify;
+    }
+    article h2{
+        margin-bottom: 1em;
+
+    }
+    .dados_pessoais div {
+        width: 95%;
+    }
+
+    .texto1, .texto2{
+        width: 95%;
+        margin: auto auto 1rem auto;
+        text-align: center;
+        float: none;
+    }
 }
