@@ -158,3 +158,68 @@ footer a {
         color: #000000;
     }
 }
+
+
+/*Responsividade do Menu*/
+
+.menu_btn{
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin: auto 1rem auto auto;
+    cursor: pointer;
+    
+}
+.fechar_menu_btn{
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    margin: 1em;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+@media screen and (max-width:575px) {
+    .menu_btn{
+        display: block;
+   
+    }
+    nav ul {
+        display: none;
+        /*display: flex;*/
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
+        margin: 0;
+
+        background-color: #000000;
+    }
+    nav ul li:first-of-type {
+        margin-top: 10rem;
+    }
+    nav ul li{
+        margin-bottom: 1rem;
+        padding: 1em;
+        border-radius: 0.5em;
+    }
+    nav ul li:hover, nav ul li span:hover{
+        background-color: #00BFA6;
+        color: #ffffff;
+        transition: 500ms;
+    }
+
+    /*botão para fechar menu*/
+    .fechar_menu_btn{
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        margin: 1em;
+        right: 0;
+    }
+}
