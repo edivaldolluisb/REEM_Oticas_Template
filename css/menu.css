@@ -12,6 +12,7 @@
     cursor: pointer;
     margin: 1em;
     right: 0;
+    z-index: 1;
 }
 @media screen and (max-width:575px) {
     .menu_btn{
@@ -29,6 +30,8 @@
         left: 0px;
         right: 0px;
         bottom: 0px;
+        z-index: 1;
+        margin: 0;
 
         background-color: #1A8CFF;
     }
