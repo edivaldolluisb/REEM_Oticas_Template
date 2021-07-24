@@ -60,7 +60,7 @@ main{
 }
 .texto2{
     float: right;
-    color: rgba(37, 215, 140, 1);
+    color: rgba(36, 214, 140, 1);
 }
 .texto2, article{
     margin-right: 5%;

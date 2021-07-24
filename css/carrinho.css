@@ -53,6 +53,7 @@ form button{
 .carrinho_produto{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     border: 2px solid;
@@ -100,4 +101,22 @@ ul li{
     height: 350px;
     bottom: 0;
     right: 0;
+}
+
+
+@media screen and (max-width:530px) {
+    #dados, .forma_entrega{
+        width: 90%;
+        margin: 5%;
+    }
+    form input, select{
+        max-width: 90%;
+        margin-bottom: 1em;
+    }
+    input[type=tel]{
+        width: 35%;
+    }
+    input[type=email], input[type=text]{
+        width: 80%;
+    }
 }
