@@ -119,4 +119,7 @@ ul li{
     input[type=email], input[type=text]{
         width: 80%;
     }
+    h1{
+        margin: 15% auto 1% auto;
+    }
 }
