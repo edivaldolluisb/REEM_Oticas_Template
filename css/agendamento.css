@@ -29,7 +29,7 @@ form input{
     border-radius: 2px;
 }
 input[type=text]{
-    max-width: 50%;
+    max-width: 40%;
 }
 
 #telefone{
@@ -67,3 +67,9 @@ main img{
     max-width: 70%;
 }
 
+@media screen and (min-width:100px){
+    #nome{
+        max-width: 30%;
+    
+    }
+}
