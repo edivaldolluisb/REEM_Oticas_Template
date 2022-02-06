@@ -1,6 +1,7 @@
 #barra_pesquisa{
     display: flex;
     margin-left: 7%;
+    justify-content: center;
     
 }
 input[type=search]{
@@ -30,18 +31,18 @@ input[type=search]{
 section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
     margin: 1em 7%;
 }
 .produto{
     width: 16rem;
-    margin: auto 1%;
     background-color: #ffffff;
-    margin-bottom: 2em;
     text-align: center;
 }
 .produto img{
     width: 100%;
+    height: 12rem;
 }
 .produto input{
     width: 50%;
@@ -82,6 +83,9 @@ section{
 }
 
 /*Responsividade*/
+@media screen and (max-width:930px) {
+    
+}
 
 @media screen and (max-width:581px) {
     .produto {
@@ -108,7 +112,6 @@ section{
 @media screen and (max-width:400px) {
     .produto {
         width: 15rem;
-        margin: auto;
         margin-bottom: 2em;
     }
     input[type=search]{
