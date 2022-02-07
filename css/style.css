@@ -27,7 +27,8 @@ main{
 }
 .texto2{
     float: right;
-    color: rgba(36, 214, 140, 1);
+    color: #2F4858;
+    font-weight: bold;
 }
 .texto2, article{
     margin-right: 5%;
@@ -39,7 +40,8 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 2rem;
-    color: #2F4858;
+    color: #fff;
+ 
 }
 .eye, article{
     width: 40%;
@@ -52,10 +54,15 @@ article{
     float: right;
     clear: right;
     text-align: justify;
-    background-color: #fff;
-    padding: 2rem 1rem;
+
+    /*border-left: 2px solid #25d78c;
+    padding: 2rem 1rem;*/
+
 }
 article h2{
+    margin-bottom: 1em;
+}
+article p{
     margin-bottom: 1em;
 }
 
@@ -74,13 +81,17 @@ article h2{
     background-color: #ffffff;
     padding: 1%;
 }
-.dados p {
-    text-align: center;
+.dados > div:first-of-type{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
 }
-.dados a {
-    margin-left: 5%;
+.dados > div:last-of-type{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: 1rem;
 }
-
 
 footer{
     text-align: center;

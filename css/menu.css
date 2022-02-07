@@ -20,6 +20,8 @@ ul{
     text-align: center;
     text-decoration: none;
     padding-inline-start: 0px;
+
+    gap: 1rem;
 }
 ul li{
     list-style: none;
@@ -42,7 +44,16 @@ li span{
     font-weight: bold;
 }
 
-
+.entrar{
+    padding: 0.2rem 1rem;
+    background-color: #2F4858;
+    border-radius: 15px;
+}
+.entrar:hover{
+    padding: 0.2rem 1rem;
+    background-color: #25d78c;
+    border-radius: 15px;
+}
 
 .menu_btn{
     display: none;
@@ -61,7 +72,7 @@ li span{
     right: 0;
     z-index: 1;
 }
-@media screen and (max-width:628px) {
+@media screen and (max-width:808px) {
     .menu_btn{
         display: block;
    
