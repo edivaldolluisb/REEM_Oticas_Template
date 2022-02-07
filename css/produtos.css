@@ -1,6 +1,5 @@
 #barra_pesquisa{
     display: flex;
-    margin-left: 7%;
     justify-content: center;
     
 }
@@ -33,7 +32,7 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin: 1em 7%;
+    margin: 1em 2%;
 }
 .produto{
     width: 16rem;
@@ -97,27 +96,20 @@ section{
         width: 12rem;
     }
 }
-@media screen and (max-width:485px) {
+@media screen and (max-width:488px) {
     .produto {
-        width: 10rem;
+        width: 15rem;
+        margin-bottom: 2em;
     }
     #barra_pesquisa {
         display: flex;
         margin-left: 7%;
     }
     input[type=search]{
-        width: 25em;
-    }
-}
-@media screen and (max-width:400px) {
-    .produto {
-        width: 15rem;
-        margin-bottom: 2em;
-    }
-    input[type=search]{
         width: 20em;
     }
 }
+
 
 @media screen and (max-width:375px) {
     input[type=search]{
