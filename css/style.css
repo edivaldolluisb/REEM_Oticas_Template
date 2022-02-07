@@ -5,42 +5,8 @@
 body{
     background-color: #1A8CFF;
 }
+/*entrar e regiatrar*/
 
-/*nav*/
-nav{
-    width: 100%;
-    display: flex;
-    margin: 2% auto auto auto;
-}
-nav h1{
-    margin-left: 5%;
-    color: #25d78c;
-    font-size: 22pt;
-}
-
-ul{
-    /*margin-left: 30%;*/
-    margin: auto 5% auto 5%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    padding-inline-start: 0px;
-}
-ul li{
-    list-style: none;
-    margin-right: 5%;
-    color: rgb(255, 255, 255);
-    
-}
-ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
-li span{
-    color: #25d78c;
-    font-weight: bold;
-}
 
 /* main */
 main{
@@ -72,6 +38,8 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 2rem;
+    color: #2F4858;
 }
 .eye, article{
     width: 40%;
@@ -84,10 +52,15 @@ article{
     float: right;
     clear: right;
     text-align: justify;
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+article h2{
+    margin-bottom: 1em;
 }
 
 #button{
-    margin: 02% ;
+    margin: 0% ;
     position: relative;
     text-align: center;
 }
@@ -95,13 +68,11 @@ article{
 
 
 .dados_pessoais{
-    margin: 05%;
+    margin: 5rem auto auto;
 }
 .dados_pessoais div{
-    width: 45%;
     background-color: #ffffff;
     padding: 1%;
-    border-radius: 3px;
 }
 .dados p {
     text-align: center;
