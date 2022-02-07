@@ -25,17 +25,43 @@ form {
     display: flex;
     flex-direction: column;
 }
-
-form input, select{
-    max-width: 50%;
+input, select{
     margin-bottom: 1em;
+    border: 2px solid #00bfa68f;
+    padding: 0.2rem ;
+    border-radius: 2px;
+    outline: none;
+}
+input:focus{
+    border-color: #00BFA6;
+}
+
+input[type=tel],select{
+    max-width: fit-content;
+    
+}
+input[type=email]{
+ max-width: 80%;
 }
 select{
     width: 8rem;
     border-style: none;
 }
-input[type=text]{
+input[type=text]:first-of-type{
+    width: 60%;
+    -webkit-transition: width .60s ease-in-out;
+    transition: width .60s ease-in-out;
+}
+input[type=text]:first-of-type:focus{
+    width: 100%;
+}
+#localidade{
     width: 30%;
+    -webkit-transition: width .55s ease-in-out;
+    transition: width .55s ease-in-out;
+}
+#localidade:focus{
+    width: 70%;
 }
 form button{
     width: 10rem;
@@ -105,21 +131,18 @@ ul li{
 
 
 @media screen and (max-width:530px) {
+    h1{
+        margin: 15% auto 1% auto;
+    }
     #dados, .forma_entrega{
         width: 90%;
         margin: 5%;
     }
     form input, select{
-        max-width: 90%;
         margin-bottom: 1em;
     }
     input[type=tel]{
         width: 35%;
     }
-    input[type=email], input[type=text]{
-        width: 80%;
-    }
-    h1{
-        margin: 15% auto 1% auto;
-    }
+
 }
