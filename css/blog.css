@@ -179,7 +179,7 @@ footer a {
     right: 0;
     z-index: 1;
 }
-@media screen and (max-width:575px) {
+@media screen and (max-width:808px) {
     .menu_btn{
         display: block;
    
