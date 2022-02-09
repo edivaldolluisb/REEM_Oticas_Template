@@ -27,8 +27,13 @@ form input{
     padding: 0.2rem;
     border-style: none;
     border-radius: 2px;
+    outline-color: #25d78c;
 }
 input[type=text]{
+    max-width: 20%;
+    transition: max-width 1s;
+}
+input[type=text]:focus{
     max-width: 40%;
 }
 
