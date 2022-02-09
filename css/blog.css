@@ -8,40 +8,15 @@ body{
 
 /*nav*/
 nav{
-    
-    display: flex;
-    margin: auto auto;
-    padding: 3% 2% 2% 5%;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: #000000;
 }
-nav h1{
-    margin-left: 5%;
+nav h1,li span{
     color: #1A8CFF;
-    font-size: 25pt;
 }
 
-ul{
-    /*margin-left: 30%;*/
-    margin: auto 5% auto 5%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    padding-inline-start: 0px;
-}
-ul li{
-    list-style: none;
-    margin-right: 5%;
-    color: rgb(255, 255, 255);
-    
-}
-ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
-li span{
-    color: #1A8CFF;
-}
 
 /* main */
 
