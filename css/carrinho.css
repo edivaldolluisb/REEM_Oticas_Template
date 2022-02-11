@@ -75,8 +75,9 @@ form button{
     font-weight: bold;
     text-align: center;
     color: #00BFA6;
+    margin-top: 1rem;
 }
-.carrinho_produto{
+/*.carrinho_produto{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +85,20 @@ form button{
     justify-content: space-evenly;
     border: 2px solid;
     margin: 1rem auto 1rem 0;
+}*/
+
+table tbody tr, table th{
+    text-align: left;
+}
+
+#div_total_compras{
+    font-weight: bold;
+
+    margin-top: 2rem;
+}
+
+button[type='submit']{
+    cursor: pointer;
 }
 
 #dados, .forma_entrega{

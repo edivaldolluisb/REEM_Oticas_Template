@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
 
     <title>Carrinho</title>
 </head>
+
 <body>
     <a href="./produtos.html"><img class="close" src="./imagens/icones/icons8-delete.gif" alt="fechar"></a>
     <h1>Carrinho de compras</h1>
@@ -35,17 +37,44 @@
             <input type="text" id="localidade" placeholder="Morada">
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="email">
-        
-            <p class="seus_produtos">Os seus produtos:</p>
-            <div id="carrinho_produtos">
+
+            <h2 class="seus_produtos">Os seus produtos:</h2>
+            <!--<div id="carrinho_produtos">
                 <div class="carrinho_produto"><p>Spray</p>11€<p>Quantidade: 2</p>
                 </div>
                 <div class="carrinho_produto"><p>Pano de micrófibra</p>27€<p>Quantidade: 1</p>
                 </div>
                 <div class="carrinho_produto"><p>Pack Óculos e Lentes</p>72€<p>Quantidade: 3</p>
                 </div>
-            </div>
-            <div>
+            </div>-->
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spray</td>
+                        <td>2</td>
+                        <td>11€</td>
+                    </tr>
+                    <tr>
+                        <td>Pano de micrófibra</td>
+                        <td>1</td>
+                        <td>27€</td>
+                    </tr>
+                    <tr>
+                        <td>Pack Óculos e Lentes</td>
+                        <td>3</td>
+                        <td>72€</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="div_total_compras">
                 <p>Total: 110€</p>
             </div>
 
@@ -55,14 +84,17 @@
     <section class="forma_entrega">
         <h2>Forma de entrega dos produtos</h2>
         <ul>
-            <li>O sue produto será separado na loja física de modo com que que o cliente terá que requerer a mesma apra pegar o seu produto.</li>
-            <li>A outra forma caso o cliente queira, poderá ser feita a entrega ao lugar indicado pelo mesmo, sendo assim cobrado um valor adicional pelo transporte tendo em conta o lugar da entrega.</li>
+            <li>O sue produto será separado na loja física de modo com que que o cliente terá que requerer a mesma apra
+                pegar o seu produto.</li>
+            <li>A outra forma caso o cliente queira, poderá ser feita a entrega ao lugar indicado pelo mesmo, sendo
+                assim cobrado um valor adicional pelo transporte tendo em conta o lugar da entrega.</li>
         </ul>
         <p class="paragrafo2">Entraremos em contato com o cliente para a confirmaçpão da compra</p>
     </section>
 
     <div class="bola bola11"></div>
     <div class="bola bola12"></div>
-    
+
 </body>
+
 </html>
