@@ -21,8 +21,6 @@ console.log(produtos)
 
 function adicionar_na_tabela() {
     const prodt = produtos
-
-    
      
     for (let i = 0; i < prodt.length; i++) {
         console.log(prodt[i])
@@ -44,8 +42,14 @@ function adicionar_na_tabela() {
         var quantidade_texto = document.createTextNode(prodt[i][2])
         quantidade.appendChild(quantidade_texto)
 
+        //criar a td de eliminar
+        let eliminar  = document.createElement('TD')
+        let icon_eliminar = document.createElement('i')
+        icon_eliminar.setAttribute("class", "fa-solid fa-xmark")
+        eliminar.appendChild(icon_eliminar)
 
-        produto_tabela.append(nome, preco, quantidade)
+        //adicionar os dados na tr
+        produto_tabela.append(nome, preco, quantidade, eliminar)
 
         window.document.querySelector('tbody').appendChild(produto_tabela)
 
