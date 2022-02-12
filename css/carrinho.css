@@ -90,6 +90,9 @@ form button{
 table tbody tr, table th{
     text-align: left;
 }
+table tbody td{
+    padding-bottom: 0.5rem;
+}
 
 #div_total_compras{
     font-weight: bold;
