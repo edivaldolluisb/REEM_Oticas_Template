@@ -22,20 +22,33 @@ console.log(produtos)
 function adicionar_na_tabela() {
     const prodt = produtos
 
-    var produto_tabela = 
-
-    var nome = 'produto'
-    var preco = 0
-    var quantidade = 0
+    
      
     for (let i = 0; i < prodt.length; i++) {
         console.log(prodt[i])
 
-        nome = prodt[i][0]
-        preco = prodt[i][1]
-        quantidade = prodt[i][2]
-
         console.log(prodt[i][0], prodt[i][1], prodt[i][2])
+
+        //criar a linha da tabela
+        var produto_tabela = document.createElement("TR");
+
+        var nome  = document.createElement('TD')
+        var nome_texto = document.createTextNode(prodt[i][0])
+        nome.appendChild(nome_texto)
+
+        var preco  = document.createElement('TD')
+        var preco_texto = document.createTextNode(prodt[i][1])
+        preco.appendChild(preco_texto)
+
+        var quantidade  = document.createElement('TD')
+        var quantidade_texto = document.createTextNode(prodt[i][2])
+        quantidade.appendChild(quantidade_texto)
+
+
+        produto_tabela.append(nome, preco, quantidade)
+
+        window.document.querySelector('tbody').appendChild(produto_tabela)
+
     }
 }
 adicionar_na_tabela()
