@@ -16,12 +16,16 @@ function pegar_produto(id, nome, preco) {
 
 
     /*guardar dados na local storage*/
-    var produtos = (localStorage.getItem('produtos'));
-    var lst_total = localStorage.getItem('total');  
+    var produtos = JSON.parse(localStorage.getItem('produtos'));
+    var lst_total = localStorage.getItem('total'); 
+    var cart_size = produtos.length
+
     console.log(produtos)
 
-
-
+    produtos[cart_size] = [nome, preco, quantidade]
+    localStorage.setItem('produtos', JSON.stringify(produtos))
+    console.log('cartsize: ', cart_size)
+    document.querySelector('.numero_itens').innerHTML = produtos.length
 
 
     /* guardar o valor do total */
