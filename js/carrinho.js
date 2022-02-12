@@ -27,6 +27,10 @@ function adicionar_na_tabela() {
 
         console.log(prodt[i][0], prodt[i][1], prodt[i][2])
 
+        //adicionar na textarea
+        var textarea_= document.querySelector('#textarea_produtos');
+        textarea_.value += '+ ' + prodt[i][0] + ', preco: ' + prodt[i][1] + ', quantidade: ' + prodt[i][2] + '\n';
+
         //criar a linha da tabela
         var produto_tabela = document.createElement("TR");
 
@@ -56,3 +60,12 @@ function adicionar_na_tabela() {
     }
 }
 adicionar_na_tabela()
+
+// adicionar total 
+
+$total = localStorage.getItem('total')
+
+window.document.querySelector('#div_total_compras').querySelector('span').innerHTML = $total
+document.querySelector('#input_total').value = $total
+ 
+

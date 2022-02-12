@@ -96,7 +96,11 @@ table tbody tr td:nth-child(3), table th:nth-child(3){
 table tbody td{
     padding-bottom: 0.5rem;
 }
-
+.fa-xmark{
+    cursor: pointer;
+    background-color: #00BFA6;
+    padding: 0.3rem;
+}
 #div_total_compras{
     font-weight: bold;
 

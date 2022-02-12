@@ -79,8 +79,14 @@
                     </tr>
                 </tbody>
             </table>
+
+            <!--text area para enviar os dados para back end-->
+            <textarea name="Produtos" style="display: none;" id="textarea_produtos" cols="30" rows="10"></textarea>
+
             <div id="div_total_compras">
-                <p>Total: 110€</p>
+                <p>Total: <span></span>€</p>
+                <!--input para enviar o total para back-end-->
+                <input type="hidden" name="" value="" id="input_total">
             </div>
 
             <button type="submit">finalizar compra</button>
