@@ -39,7 +39,7 @@ function adicionar_na_tabela() {
         nome.appendChild(nome_texto)
 
         var preco  = document.createElement('TD')
-        var preco_texto = document.createTextNode(prodt[i][1])
+        var preco_texto = document.createTextNode(prodt[i][1] + '€')
         preco.appendChild(preco_texto)
 
         var quantidade  = document.createElement('TD')
@@ -77,11 +77,12 @@ function remover_produto(n) {
 
     //console.log('produtos: ', $total, produtos[n][1])
     let novo_total = Number($total) - Number(produtos[n][1])
+    localStorage.setItem('total', novo_total)
 
     let $produtos = JSON.parse(localStorage.getItem('produtos'))
     $produtos.splice(n, 1)
     localStorage.setItem('produtos', JSON.stringify($produtos))
-    localStorage.setItem('total', novo_total)
+    
     //adicionar_na_tabela()
     console.log('fim da eliminação')
     location.reload()
