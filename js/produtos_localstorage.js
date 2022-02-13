@@ -33,4 +33,6 @@ function pegar_produto(id, nome, preco) {
     console.log(total)
     localStorage.setItem('total', total)
 }
+var produtos = JSON.parse(localStorage.getItem('produtos'));
+document.querySelector('.numero_itens').innerHTML = produtos.length
 
