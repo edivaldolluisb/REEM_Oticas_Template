@@ -22,7 +22,7 @@ form{
 }
 form input{
     max-width: 50%;
-    margin-bottom: 01%;
+    margin-bottom: 1%;
 
     padding: 0.2rem;
     border-style: none;
@@ -30,13 +30,15 @@ form input{
     outline-color: #25d78c;
 }
 input[type=text]{
-    max-width: 20%;
+    max-width: 30%;
     transition: max-width 1s;
 }
 input[type=text]:focus{
-    max-width: 40%;
+    max-width: 60%;
 }
-
+#nome{
+    max-width: 50%;
+}
 #telefone{
     max-width: 12rem;
 }
@@ -48,15 +50,16 @@ input[type=text]:focus{
 }
 
 form label{
-    color: white;
+    color: #fff;
     max-width: 50%;
 }
 form button{
     width: 20%;
     border-style: none;
-    margin: 2% auto 2% 15%;
+    margin: 2% auto 2% 0;
     padding: 0.5%;
     background-color: #00BFA6;
+    color: #2F4858;
     border-radius: 2px;
     font-weight: bold;
 }
@@ -72,9 +75,22 @@ main img{
     max-width: 70%;
 }
 
-@media screen and (min-width:100px){
-    #nome{
-        max-width: 30%;
+@media screen and (max-width: 436px){
+
+    form{
+        margin:auto 5%;
+        display: flex;
+        flex-direction: column;
     
+        font-size: 10pt;
     }
+    #nome, input[type=text]:focus, input[type=text]{
+        max-width: 90%;
+    }
+    form button{
+        width: 100%;
+        margin: 1rem auto 1rem;
+        padding: 0.5rem 2rem;
+    }
+
 }
