@@ -50,6 +50,7 @@ function adicionar_na_tabela() {
         let eliminar  = document.createElement('TD')
         let icon_eliminar = document.createElement('i')
         icon_eliminar.setAttribute("class", "fa-solid fa-xmark")
+        icon_eliminar.setAttribute("onclick", "remover_produto(" + i +")");
         eliminar.appendChild(icon_eliminar)
 
         //adicionar os dados na tr
@@ -63,9 +64,25 @@ adicionar_na_tabela()
 
 // adicionar total 
 
-$total = localStorage.getItem('total')
+var $total = localStorage.getItem('total')
 
 window.document.querySelector('#div_total_compras').querySelector('span').innerHTML = $total
 document.querySelector('#input_total').value = $total
  
+// remover produto
 
+function remover_produto(n) {
+    //n -> index do produto no array
+    console.log('entrou na eliminação')
+
+    //console.log('produtos: ', $total, produtos[n][1])
+    let novo_total = Number($total) - Number(produtos[n][1])
+
+    let $produtos = JSON.parse(localStorage.getItem('produtos'))
+    $produtos.splice(n, 1)
+    localStorage.setItem('produtos', JSON.stringify($produtos))
+    localStorage.setItem('total', novo_total)
+    //adicionar_na_tabela()
+    console.log('fim da eliminação')
+    location.reload()
+}
