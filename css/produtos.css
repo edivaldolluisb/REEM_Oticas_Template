@@ -66,6 +66,35 @@ section{
 .produto button:hover{
     background-color: rgb(0, 191, 166, 0.6);
 }
+/* added to cart message*/
+#Mensagens{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+.added_carrinho_message{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: #2F4858;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem 0.5rem;
+    /*animação*/
+    animation-name: adicionado;
+    animation-duration: 4s;  
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes adicionado {
+    from {bottom: 1.5rem;}
+    to {bottom: 10rem;}
+
+    0%   {opacity: 0;}
+    1%, 9%  {opacity: 1;}
+    91%, 99%  {opacity: 0.8;}
+    100% {opacity: 0;}
+  }
 
 /*paginação*/
 #paginacao{

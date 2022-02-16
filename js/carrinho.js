@@ -99,5 +99,26 @@ function remover_produto(n) {
 
     //atualizar após remover da lista
     console.log('fim da eliminação')
-    location.reload()
+    //location.reload()
+    removedMsg()
+
+    function refresh() {
+        location.reload()
+    }
+    setTimeout(refresh, 1500)
+
 }
+
+/*menssagem para mostrar removido ao produto*/
+
+function removedMsg() {
+    var Mensagens = document.querySelector('#Mensagens')
+
+    const div = document.createElement("div");
+    const texto = document.createTextNode("Produto removido do carrinho")
+    div.appendChild(texto);
+    div.setAttribute("class", "added_carrinho_message")
+
+    Mensagens.appendChild(div);
+}
+

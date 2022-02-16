@@ -44,7 +44,8 @@ function pegar_produto(id, nome, preco) {
         document.querySelector('.numero_itens').innerHTML = produtos.length
 
     }
-
+    addedMsg()
+    setTimeout(removerdisplay, 4000)
 }
 
 // calcular o total
@@ -71,3 +72,30 @@ calcular_total_()
 var produtos = JSON.parse(localStorage.getItem('produtos'));
 document.querySelector('.numero_itens').innerHTML = produtos.length
 console.table(produtos)
+
+
+/*menssagem para mostrar adicionado ao produto*/
+
+function addedMsg() {
+    var Mensagens = document.querySelector('#Mensagens')
+
+    const div = document.createElement("div");
+    const texto = document.createTextNode("Produto adicionado ao carrinho");
+    div.appendChild(texto);
+    div.setAttribute("class", "added_carrinho_message")
+
+    Mensagens.appendChild(div);
+}
+
+// função para remover as mensagens na div
+function removerdisplay() {
+    var menssagems = document.querySelectorAll('.added_carrinho_message')
+
+    for (const menssagem of menssagems) {
+        console.log('mensagem')
+        menssagem.remove()
+    }
+
+}
+//setTimeout(removerdisplay, 2000)
+

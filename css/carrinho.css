@@ -107,6 +107,11 @@ table tbody td{
     cursor: pointer;
     background-color: #00BFA6;
     padding: 0.3rem;
+    transition: background-color 0.5s;
+}
+.fa-xmark:hover{
+    background-color: rgba(234, 75, 70, 0.7);
+    color: #fff;
 }
 #div_total_compras{
     font-weight: bold;
@@ -133,6 +138,35 @@ ul li{
     font-weight: 600;
     margin: 1em auto 2rem auto;
 }
+/* added to cart message*/
+#Mensagens{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+.added_carrinho_message{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: #2F4858;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem 0.5rem;
+    /*animação*/
+    animation-name: adicionado;
+    animation-duration: 4s;  
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes adicionado {
+    from {bottom: 1.5rem;}
+    to {bottom: 10rem;}
+
+    0%   {opacity: 0;}
+    1%, 9%  {opacity: 1;}
+    91%, 99%  {opacity: 0.8;}
+    100% {opacity: 0;}
+  }
 
 .paragrafo2{
     max-width: 70%;
