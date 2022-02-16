@@ -17,22 +17,40 @@ function pegar_produto(id, nome, preco) {
 
     /*guardar dados na local storage*/
     var produtos = JSON.parse(localStorage.getItem('produtos'));
-    var lst_total = localStorage.getItem('total'); 
-    var cart_size = produtos.length
 
-    console.log(produtos)
+    const array1 = produtos;
 
-    produtos[cart_size] = [nome, preco, quantidade]
-    localStorage.setItem('produtos', JSON.stringify(produtos))
-    console.log('cartsize: ', cart_size)
-    document.querySelector('.numero_itens').innerHTML = produtos.length
+    // pass a function to map
+    const map1 = array1.map(el => el[0]);
+    const existe = map1.indexOf(nome)
+    console.log(existe)
+    console.log(map1);
+    if (existe != -1) {
+        console.log(existe)
+        produtos[existe][2] += quantidade
+        localStorage.setItem('produtos', JSON.stringify(produtos))
+
+    }
+    else {
+        var lst_total = localStorage.getItem('total');
+        var cart_size = produtos.length
+
+        console.log(produtos)
+
+        produtos[cart_size] = [nome, preco, quantidade]
+        localStorage.setItem('produtos', JSON.stringify(produtos))
+        console.table(produtos)
+        console.log('cartsize: ', cart_size)
+        document.querySelector('.numero_itens').innerHTML = produtos.length
 
 
-    /* guardar o valor do total */
-    var total = Number(lst_total) + Number(preco * quantidade)
-    console.log(total)
-    localStorage.setItem('total', total)
+        /* guardar o valor do total */
+        var total = Number(lst_total) + Number(preco * quantidade)
+        console.log(total)
+        localStorage.setItem('total', total)
+    }
+
+
 }
 var produtos = JSON.parse(localStorage.getItem('produtos'));
 document.querySelector('.numero_itens').innerHTML = produtos.length
-
