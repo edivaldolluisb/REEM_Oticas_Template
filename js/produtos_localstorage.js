@@ -25,6 +25,7 @@ function pegar_produto(id, nome, preco) {
     const existe = map1.indexOf(nome)
     console.log(existe)
     console.log(map1);
+    // ver se o produto existe na lista de produtos
     if (existe != -1) {
         console.log(existe)
         produtos[existe][2] += quantidade
@@ -32,25 +33,41 @@ function pegar_produto(id, nome, preco) {
 
     }
     else {
-        var lst_total = localStorage.getItem('total');
+        // adicionar o produto caso o produto não exista
         var cart_size = produtos.length
 
         console.log(produtos)
 
         produtos[cart_size] = [nome, preco, quantidade]
         localStorage.setItem('produtos', JSON.stringify(produtos))
-        console.table(produtos)
         console.log('cartsize: ', cart_size)
         document.querySelector('.numero_itens').innerHTML = produtos.length
 
-
-        /* guardar o valor do total */
-        var total = Number(lst_total) + Number(preco * quantidade)
-        console.log(total)
-        localStorage.setItem('total', total)
     }
 
-
 }
+
+// calcular o total
+function calcular_total_() {
+    var produtos = JSON.parse(localStorage.getItem('produtos'));
+
+    let total = 0
+    for (const produto of produtos) {
+        console.log(produto)
+        var preco = parseFloat(produto[1])
+        var quantidade = parseInt(produto[2])
+        total += preco * quantidade
+    }
+    console.log(total)
+
+    /* guardar o valor do total */
+    localStorage.setItem('total', total)
+    return total
+}
+calcular_total_()
+
+
+
 var produtos = JSON.parse(localStorage.getItem('produtos'));
 document.querySelector('.numero_itens').innerHTML = produtos.length
+console.table(produtos)
