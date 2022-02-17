@@ -58,10 +58,17 @@ form button{
     border-style: none;
     margin: 2% auto 2% 0;
     padding: 0.5%;
-    background-color: #00BFA6;
+    background-color: #25d78c;
     color: #2F4858;
     border-radius: 2px;
     font-weight: bold;
+}
+form button:disabled{
+    background-color: #25d78d94;
+    color: #2F4858;
+}
+form p {
+    color: #fff;
 }
 main{
     margin-bottom: 20%;
@@ -93,4 +100,40 @@ main img{
         padding: 0.5rem 2rem;
     }
 
+}
+form button:hover{
+    border: 3px solid #00BFA6;
+    background-color: #fff;
+    color: #2F4858;
+}
+
+
+/* added to cart message*/
+#Mensagens{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+.added_carrinho_message{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: #2F4858;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem 0.5rem;
+    /*animação*/
+    animation-name: adicionado;
+    animation-duration: 4s;  
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes adicionado {
+    from {bottom: 1.5rem;}
+    to {bottom: 10rem;}
+
+    0%   {opacity: 0;}
+    1%, 9%  {opacity: 1;}
+    91%, 99%  {opacity: 0.8;}
+    100% {opacity: 0;}
 }

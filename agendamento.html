@@ -54,9 +54,12 @@
             <input type="email" name="email" id="email" placeholder="Seu email">
             <label for="data">Clique no espaço abaixo para selecionar a data</label>
             <input type="datetime-local" id="data">
-            <button type="submit">agendar</button>
+            
+            <button type="submit" disabled>agendar</button>
+            <p>Precisa Preencher todos os dados para poder agendar</p>
 
         </form>
+        <div id="Mensagens"></div>
         <img src="./imagens/undraw_doctors_hwty.svg" alt="dotor e enfermeira">
 
     </main>
@@ -71,6 +74,7 @@
 
     <!--arquivos js-->
     <script src="./js/menu.js"></script>
+    <script src="./js/agendamento.js"></script>
 
 </body>
 
