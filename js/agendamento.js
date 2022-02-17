@@ -59,3 +59,12 @@ function removerdisplay() {
     }
 
 }
+
+/*data minima do formulário*/
+const data = new Date();
+var dateControl = document.querySelector('input[type="datetime-local"]');
+//dateControl.value = '2017-06-01T08:30';
+console.log(data.getFullYear(), data.getMonth()+1, data.getDate())
+/*dateControl.value = `${data.getFullYear()}-0${data.getMonth()+1}-${data.getDate()}T08:30`;*/
+dateControl2 = `${data.getFullYear()}-0${data.getMonth()+1}-${data.getDate()}T08:30`;
+dateControl.setAttribute("min", `${dateControl2}`)
