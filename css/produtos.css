@@ -102,25 +102,29 @@ section{
 }
 .paginacao{
     margin: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
 }
 .paginacao span{
     padding: 0.5em 0.7em;
     background-color: #ffffff;
     border-radius: 0.2em;
-    margin-left: 0.5rem;
 }
 .paginacao span:hover{
-    background-color: #1A8CFF;
-    color: #ffffff;
+    background-color: #2F4858;
+    color: #fff;
 }
 .paginacao a{
     text-decoration: none;
-    color: #000000;
+    color: #000;
 }
 
 /*Responsividade*/
-@media screen and (max-width:930px) {
-    
+@media screen and (max-width:404px) {
+    .paginacao{
+        gap: 1rem;
+    }
 }
 
 @media screen and (max-width:581px) {
