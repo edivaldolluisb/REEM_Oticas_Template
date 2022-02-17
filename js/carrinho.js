@@ -122,4 +122,22 @@ function removedMsg(mensagem) {
     Mensagens.appendChild(div);
 }
 
+// validação de formulários
+
+
+var botao = document.querySelector('button')
+var aviso = document.querySelector('#aviso')
+
+function verbtn() {
+    let $produtos = JSON.parse(localStorage.getItem('produtos'))
+    var nome = document.querySelector('#nome').value
+    console.log(nome)
+    if (nome != '' && $produtos.length != 0) {
+        botao.disabled = false
+    }
+    if ($produtos.length == 0) {
+        aviso.innerHTML = 'Não tem produtos'
+    }
+}
+setInterval(verbtn, 1000)
 
